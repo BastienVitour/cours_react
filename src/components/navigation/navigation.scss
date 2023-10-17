@@ -1,0 +1,28 @@
+$green: rgb(48, 89, 82);
+
+.main-navigation {
+
+    width: 100vw;
+    border-bottom: 2px solid $green;
+    display: flex;
+
+    .nav-link {
+        padding: 10px;
+        border: 1px solid $green;
+        border-top-width: 2px;
+        border-bottom: none;
+        cursor: pointer;
+        color: $green
+    }
+
+    .nav-link:last-of-type {
+        border-right-width: 2px;
+    }
+
+    .nav-link:hover {
+        background-color: $green;
+        color: white;
+        transition: all 0.25s ease-in-out;
+    }
+
+}

@@ -1,0 +1,22 @@
+.main-movie-page {
+
+    padding: 25px;
+
+    .movie-loaded {
+
+        display: flex;
+
+        img {
+            margin-right: 25px;
+        }
+
+        .movie-informations {
+            
+            .movie-genres {
+                font-weight: bold;
+            }
+        }
+
+    }
+
+}

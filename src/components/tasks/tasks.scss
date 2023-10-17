@@ -1,0 +1,84 @@
+.main-task-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    .task-list {
+
+        margin-top: 10px;
+        padding: 10px;
+    
+        form {
+            margin: 15px 0;
+
+            input {
+                padding: 5px;
+                background-color: rgb(240, 240, 240);
+                border: 1px solid rgb(200, 200, 200);
+                margin-right: 7px;
+            }
+
+            button {
+                padding: 5px 10px;
+                background-color: blue;
+                color: white;
+                border: 1px solid blue
+            }
+        }
+
+        ul {
+            padding-left: 0;
+
+            .single-task {
+                display: flex;
+                align-items: center;
+                margin-bottom: 10px;
+    
+                input[type="checkbox"] {
+                    display: none;
+                }
+
+                .custom-checkbox-not-done {
+                    border: 2px solid blue;
+                    padding: 10px;
+                    cursor: pointer;
+                }
+
+                .custom-checkbox-done {
+                    cursor: pointer;
+                    border: 2px solid gray;
+                    font-size: 0.75em;
+                    font-weight: 600;
+                    color: gray;
+                    padding: 4px 7px;
+                    background-color: lightgrey;
+                }
+        
+                span {
+                    width: 100%;
+                    margin: auto 10px;
+                    font-weight: 600;
+                }
+
+                .name-done {
+                    color: grey;
+                    text-decoration: line-through;
+                }
+
+                button {
+                    border-radius: 5px;
+                    border: 1px solid red;
+                    background-color: red;
+                    color: white
+                }
+
+                button:hover {
+                    background-color: rgb(230, 0, 0);
+                }
+            }
+
+        }
+
+    }
+
+}

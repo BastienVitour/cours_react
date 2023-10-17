@@ -1,0 +1,97 @@
+$green: rgb(48, 89, 82);
+
+.main-user-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    .arrows {
+        font-weight: bolder;
+        display: flex;
+        justify-content: space-between;
+
+        .change-user-arrow {
+            height: 35px;
+        }
+    }
+
+    .user-card {
+        border: 1px solid lightgray;
+        padding: 25px;
+        box-shadow: 0px 0px 5px 2px grey;
+        border-radius: 10px;
+        text-align: center;
+
+        .user-image {
+            border-radius: 100%;
+        }
+
+        .user-name {
+            font-weight: bold;
+            font-size: 2em;
+        }
+
+        .user-job {
+            color: $green;
+        }
+
+        .user-tags {
+            display: flex;
+            justify-content: space-between;
+            margin: 10px auto;
+
+            .user-tag {
+                border: 1px solid $green;
+                color: $green;
+                padding: 5px;
+            }
+
+            .user-tag:nth-child(2) {
+                margin: auto 5px;
+            }
+        }
+
+        .user-resume {
+            max-width: 250px;
+            color: rgb(125, 125, 125);
+        }
+
+        .user-complementary {
+            color: $green;
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+}
+
+.main-user-list {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .center {
+        display: flex;
+        flex-direction: column;
+
+        .user-link {
+            text-decoration: none;
+            color: inherit;
+            border: 1px solid darkgray;
+            margin: 10px auto;
+            padding: 10px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0px 0px 5px 2px gray;
+            border-radius: 5px;
+        }
+
+        .user-link:hover {
+            background-color: aliceblue;
+            transition: 0.2s;
+        }
+    }
+}
